@@ -4,8 +4,8 @@ import joblib
 # Carregar o modelo e o vectorizer
 @st.cache_resource
 def load_model_and_vectorizer():
-    vectorizer = joblib.load("vectorizer_sem_ajuste_sem_kfold-c1-gSC.pkl")
-    model = joblib.load("modelo_sem_ajuste_sem_kfold-c1-gSC.pkl")
+    vectorizer = joblib.load("vectorizer_comAjuste_kfold-c10-g0.1.pkl")
+    model = joblib.load("modelo_comAjuste_kfold-c10-g0.1.pkl")
     return vectorizer, model
 
 vectorizer, model = load_model_and_vectorizer()
